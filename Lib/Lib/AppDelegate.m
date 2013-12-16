@@ -7,12 +7,16 @@
 //
 
 #import "AppDelegate.h"
-
+#import "KeychainManager.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [KeychainManager saveObject:@"VALUE" withService:@"1"];
+    [KeychainManager list];
+    NSString *ARR = [KeychainManager loadObjectWithService:@"1"];
+    NSLog(@"loaded : %@",ARR);
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

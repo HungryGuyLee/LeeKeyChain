@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B2E11B2185EF42000A10F35 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2E11B1185EF42000A10F35 /* Security.framework */; };
 		9B3AC2BB18584654008FC1A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3AC2BA18584654008FC1A1 /* Foundation.framework */; };
 		9B3AC2BD18584654008FC1A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3AC2BC18584654008FC1A1 /* CoreGraphics.framework */; };
 		9B3AC2BF18584654008FC1A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3AC2BE18584654008FC1A1 /* UIKit.framework */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B2E11B1185EF42000A10F35 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9B3AC2B718584654008FC1A1 /* Lib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3AC2BA18584654008FC1A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B3AC2BC18584654008FC1A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B2E11B2185EF42000A10F35 /* Security.framework in Frameworks */,
 				9B3AC2BD18584654008FC1A1 /* CoreGraphics.framework in Frameworks */,
 				9B3AC2BF18584654008FC1A1 /* UIKit.framework in Frameworks */,
 				9B3AC2BB18584654008FC1A1 /* Foundation.framework in Frameworks */,
@@ -80,6 +83,7 @@
 		9B3AC2AE18584654008FC1A1 = {
 			isa = PBXGroup;
 			children = (
+				9B2E11B1185EF42000A10F35 /* Security.framework */,
 				9B3AC2E918584666008FC1A1 /* Classes */,
 				9B3AC2C018584654008FC1A1 /* Lib */,
 				9B3AC2D918584654008FC1A1 /* LibTests */,
@@ -386,6 +390,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lib/Lib-Prefix.pch";
 				INFOPLIST_FILE = "Lib/Lib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -399,6 +404,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lib/Lib-Prefix.pch";
 				INFOPLIST_FILE = "Lib/Lib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -465,6 +471,7 @@
 				9B3AC2E518584654008FC1A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B3AC2E618584654008FC1A1 /* Build configuration list for PBXNativeTarget "LibTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +480,7 @@
 				9B3AC2E818584654008FC1A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -47,4 +47,15 @@
     SecItemDelete((__bridge CFDictionaryRef)keychainQuery);
 }
 
++(void)list
+{
+    NSMutableDictionary *keychainQuery = [NSMutableDictionary dictionaryWithObjectsAndKeys:(__bridge id)kSecClassGenericPassword,(__bridge id)kSecClass,(__bridge id)kSecMatchLimitAll,(__bridge id)kSecMatchLimit,nil];
+    [keychainQuery setObject:(__bridge id)kCFBooleanTrue forKey:(__bridge id)kSecReturnAttributes];
+    CFTypeRef dict = nil;
+    SecItemCopyMatching((__bridge CFDictionaryRef)keychainQuery, &dict);
+    NSDictionary *ansDict = (__bridge NSDictionary *)dict;
+    NSLog(@"%@",ansDict);
+}
+
+
 @end

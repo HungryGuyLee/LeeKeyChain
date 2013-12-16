@@ -13,4 +13,5 @@
 +(void)saveObject:(id)data withService:(NSString *)service;
 +(id)loadObjectWithService:(NSString *)service;
 +(void)removeWithService:(NSString *)service;
++(void)list;
 @end
