@@ -1,6 +1,6 @@
 # LeeKeychainManager
 
-因为有项目用到keychain，但是官方的例子 [GenericKeychain](https://developer.apple.com/library/ios/samplecode/GenericKeychain/Introduction/Intro.html) 不够简单明了，所以自己看了一天文档，写了一个类，轻量的实现自己的需求
+因为有项目用到keychain，但是官方的例子 [GenericKeychain](https://developer.apple.com/library/ios/samplecode/GenericKeychain/Introduction/Intro.html) 不够简单明了，所以自己看了文档，写了一个类，轻量的实现自己的需求
 
 ## 使用方法
 
